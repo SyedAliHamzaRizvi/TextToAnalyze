@@ -33,10 +33,10 @@ export default function Navbar(props) {
      
     </ul>
     
-    <div className={`form-check form-switch text-${props.mode==='dark'? 'light' : 'dark'}`}>
-  <input className="form-check-input" onClick={props.toggleMode} type="checkbox" onClick={() => {
+    <div className={`form-check form-switch text-${props.mode==='dark'? 'light' : 'dark'}`} onClick={() => {
     document.querySelector('.navbar-collapse').classList.remove('show');
-  }} role="switch" id="flexSwitchCheckDefault"/>
+  }}>
+  <input className="form-check-input" onClick={props.toggleMode} type="checkbox" role="switch" id="flexSwitchCheckDefault"/>
   <label className="form-check-label" htmlFor="flexSwitchCheckDefault">Enable Darkmode</label>
 </div>
   </div>
